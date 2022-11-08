@@ -17,4 +17,4 @@ RUN pip install -r requirements.txt
 COPY Infrastructure ./Infrastructure
 COPY . .
 # Specify the command to run on container start
-ENTRYPOINT ["./Infrastructure/gunicorn.sh"]
+ENTRYPOINT ["python 3 app/python.py"]
