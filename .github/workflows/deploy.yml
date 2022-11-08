@@ -1,4 +1,4 @@
-name: 🚀 Production deployment
+name: 🚀 Commit and  Deploy to Test Env
 # Only trigger, when the build workflow succeeded
 on:
   push:
