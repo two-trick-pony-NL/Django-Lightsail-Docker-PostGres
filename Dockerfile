@@ -2,7 +2,7 @@
 FROM python:3.10-buster
 
 # By default, listen on port 5000
-EXPOSE 8000/tcp
+EXPOSE 80/tcp
 
 # Set the working directory in the container
 WORKDIR /CS_NL
@@ -17,4 +17,4 @@ RUN pip install -r requirements.txt
 COPY CS_NL .
 
 # Specify the command to run on container start
-ENTRYPOINT ["python3", "manage.py", "runserver"]
+ENTRYPOINT ["python3", "manage.py", "runserver", "80"]
