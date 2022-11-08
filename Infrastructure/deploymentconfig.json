@@ -1,6 +1,6 @@
 
 {"django": {
-  "image": ":django-backend.django-backend:latest",
+  "image": ":django.django:latest",
   "ports": {"8000": "HTTP", "80": "HTTP"}
 }
 }
