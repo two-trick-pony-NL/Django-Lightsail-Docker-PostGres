@@ -1,8 +1,9 @@
 # Set base image (host OS)
 FROM python:3.10-buster
 
-# By default, listen on port 5000
-EXPOSE 80/tcp
+# By default, listen on port 8000
+EXPOSE 80
+EXPOSE 8000
 
 # Set the working directory in the container
 WORKDIR /CS_NL
@@ -17,4 +18,4 @@ RUN pip install -r requirements.txt
 COPY CS_NL .
 
 # Specify the command to run on container start
-ENTRYPOINT ["python3", "manage.py", "runserver", "80"]
+ENTRYPOINT ["python3", "manage.py", "runserver"]
