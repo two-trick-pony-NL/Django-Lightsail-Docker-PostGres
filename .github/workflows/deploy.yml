@@ -12,7 +12,7 @@ jobs:
     name: 🚀 Launching new version...
     runs-on: ubuntu-latest
     steps:
-      - name: 🗂  Getting all the code Peter has written
+      - name: 🗂  Getting all the code written from Github
         uses: actions/checkout@v2
       - name: ⚙️  Updating to the latest versions
         run: |
