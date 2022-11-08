@@ -2,5 +2,8 @@
 {"django": {
   "image": ":django.django.latest",
   "ports": {"8000": "HTTP", "80": "HTTP"}
-}
+},
+"postgres": {
+  "image": "rpostgres:latest",
+  "ports": {"5432": "HTTP"}
 }
