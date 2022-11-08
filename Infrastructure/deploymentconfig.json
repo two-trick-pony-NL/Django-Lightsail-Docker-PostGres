@@ -1,6 +1,6 @@
 
 {"django": {
-  "image": ":djangolightsaildockerpostgres:latest",
+  "image": ":djangolightsaildockerpostgres.djangolightsaildockerpostgres:latest",
   "ports": {"8000": "HTTP", "80": "HTTP"}
 },
 "postgres-database": {
