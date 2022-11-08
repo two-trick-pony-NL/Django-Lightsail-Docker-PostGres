@@ -4,6 +4,7 @@
   "ports": {"8000": "HTTP", "80": "HTTP"}
 },
 "postgres": {
-  "image": "rpostgres:latest",
+  "image": "postgres:latest",
   "ports": {"5432": "HTTP"}
+}
 }
