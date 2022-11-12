@@ -11,6 +11,10 @@ WORKDIR /CS_NL
 # Copy the dependencies file to the working directory
 COPY requirements.txt .
 
+# set environment variables
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
+
 # Install any dependencies
 RUN pip install -r requirements.txt
 
@@ -18,4 +22,6 @@ RUN pip install -r requirements.txt
 COPY CS_NL .
 
 # Specify the command to run on container start
-ENTRYPOINT ["python3", "manage.py", "runserver", "0.0.0.0:8000"]
+#ENTRYPOINT ["./gunicorn.sh"]
+#CMD python3 manage.py runserver  
+ENTRYPOINT ["python3", "manage.py", "runserver", "0.0.0.0:80"]
