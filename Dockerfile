@@ -24,4 +24,4 @@ COPY CS_NL .
 # Specify the command to run on container start
 #ENTRYPOINT ["./gunicorn.sh"]
 #CMD python3 manage.py runserver  
-ENTRYPOINT ["gunicorn CS_NL.wsgi"]
+ENTRYPOINT ["gunicorn CS_NL/CS_NL.wsgi"]
