@@ -21,7 +21,4 @@ RUN pip install -r requirements.txt
 COPY . .
 
 # Specify the command to run on container start
-#ENTRYPOINT ["cd CS_NL && ./gunicorn.sh"]
 CMD ["python3", "Django/manage.py", "runserver", "0.0.0.0:8000"]
-#ENTRYPOINT ["gunicorn CS_NL/CS_NL.wsgi"]
-#CMD ["gunicorn", "--bind, 0.0.0.0:8000", "--workers", "1", "--timeout", "60", "CS_NL/CS_NL.wsgi"]
