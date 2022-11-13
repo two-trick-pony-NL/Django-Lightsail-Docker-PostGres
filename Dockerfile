@@ -19,9 +19,11 @@ ENV PYTHONUNBUFFERED 1
 RUN pip install -r requirements.txt
 
 # Copy the content of the local src directory to the working directory
-COPY CS_NL .
+COPY . .
+
+
 
 # Specify the command to run on container start
 #ENTRYPOINT ["./gunicorn.sh"]
 #CMD python3 manage.py runserver  
-ENTRYPOINT ["gunicorn CS_NL/CS_NL.wsgi"]
+ENTRYPOINT ["gunicorn CS_NL.wsgi"]
